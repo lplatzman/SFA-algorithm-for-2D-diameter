@@ -4,6 +4,6 @@ Computes the diameter of a given set of points in 2D.   Code provided in C, Java
 
 
 TESTING MATH:
-The area of a circle is :math:`A_i = (\pi/4) d^2`.
-.. math::
-   \psi(r) = e^{-2r}
+The area of a circle is $`A_i = (\pi/4) d^2`$.
+
+$$ \psi(r) = e^{-2r} $$
