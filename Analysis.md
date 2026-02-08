@@ -6,7 +6,7 @@ These notes are posted on [GitHub](https://github.com/lplatzman/SFA-algorithm-fo
 
 Here is how the exact diameter of a set P of n points, is computed:
 
-Step 1.  Select a point in the convex closure of P that we will call the hub.  In principle, it doesn’t matter where the hub is located.  But traditionally, the hub is an extreme point of the given set, that minimizes y and then (among points that minimize y) minimizes x.
+Step 1.  Select a point in the convex closure of P that we will call the *hub*.  In principle, it doesn’t matter where the hub is located.  But traditionally, the hub is an extreme point of the given set, that minimizes y and then (among points that minimize y) minimizes x.
 
 Step 2.  Sort the points according to their polar-coordinate angles, taking the hub as origin. 
   
@@ -25,9 +25,9 @@ Note:  In this account, we have deliberately glossed over a difficulty that aris
 
 Note:  In times past, much was made of the calculation of polar coordinates, which requires trigonometric functions.   Strangely, there were no such qualms about the square root, which is also a transcendental function.   It hardly matters today, when these functions are evaluated by polynomial approximations, and the time to evaluate them is roughly the same as that of adding or multiplying.
 
-# The approximate algorithm
+## The approximate algorithm
 
-In the new algorithm, Step 2 is replaced by a modified bin-sorting procedure that executes in O(n + 1/$`\epsilon`$) operations.  The other steps remain unchanged.  The diameter obtained in Step 4 is retained as D($`\epsilon`$).
+In the new algorithm, Step 2 is replaced by a procedure that executes in O(n + 1/$`\epsilon`$) operations.  The other steps remain unchanged.  The diameter obtained in Step 4 is retained as D($`\epsilon`$).
 
 The new Step 2 proceeds as follows:
 
@@ -94,5 +94,5 @@ P<sub>1</sub> and P<sub>4</sub> lie slightly inside the unit circle, whereas P<s
 Also P<sub>1</sub> and P<sub>2</sub> are assigned to bin 42, while P<sub>3</sub> and P<sub>4</sub> are assigned to bin 21.
 The true diameter D is 1.0848 (the distance from P<sub>1</sub> to P<sub>4</sub>).
 The approximation algorithm will discard P<sub>1</sub> and P<sub>4</sub> , leaving a roughly equilateral triangle of
-side=1. Thus D($`\epsilon`$) = 1. That is 92% of the true diameter D, within a factor of $`\epsilon`$ = 0.1 as
+side=1. Thus D($`\epsilon`$) = 1. That is 92% of the true diameter D, within a factor $`\epsilon`$ = 0.1 as
 required
