@@ -4,7 +4,7 @@ These notes are posted on [GitHub](https://github.com/lplatzman/SFA-algorithm-fo
 
 ## The exact algorithm
 
-Here is how the exact diameter of a set of n points, P, is computed:
+Here is how the exact diameter of a set P of n points, is computed:
 
 Step 1.  Select a point in the convex closure of P that we will call the hub.  In principle, it doesn’t matter where the hub is located.  But traditionally, the hub is an extreme point of the given set, that minimizes y and then (among points that minimize y) minimizes x.
 
