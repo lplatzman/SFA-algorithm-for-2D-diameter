@@ -13,7 +13,7 @@ More precisely:
 
 * It also returns a pair of points p and q in the given set, such that 
 ```math
-|| p-q || = D(\epsilon).
+\|p-q\| = D(\epsilon).
 ```
 <br>
 
