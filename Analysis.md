@@ -62,13 +62,13 @@ Since p and p’ are associated with the same bin,
 Since they have the same radius r,
 
 ```math
-||p-p'|| ~<~ \frac{\pi}{k} ~ r.
+\|p-p'\| ~<~ \frac{\pi}{k} ~ r.
 ```
 
 And since r < D,
 
 ```math
-||p-p'|| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+\|p-p'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
 
 Finally, since each point in the original set differs from its corresponding point 
