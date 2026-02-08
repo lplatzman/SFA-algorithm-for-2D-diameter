@@ -17,7 +17,9 @@ More precisely:
 ```
 <br>
 
-The algorithm is loosely based on a 2019 algorithm of Jieying Hong,
+The algorithm requires O(n + 1/$`\epsilon`$) operations.
+
+It is loosely based on a 2019 algorithm of Jieying Hong,
 Zhipeng Wang and Wei Niu, posted [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC6368283/). 
 Their paper is entitled *A simple approximation algorithm for the diameter of a set of points in an Euclidean plane*. Accordingly, 
 we have named our version of their algorithm SFA, for Simpler, Faster and Approximate.
