@@ -68,7 +68,7 @@ Since they have the same radius r,
 And since r < D,
 
 ```math
-||p=p'|| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+||p-p'|| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
 
 Finally, since each point in the original set differs from its corresponding point 
@@ -77,3 +77,22 @@ their diameters will not diﬀer by more than $`\epsilon`$ D,
 as desired. 
 And since each modified point p’ is a convex combination of two other points in the set 
 (the hub and q), it can be ignored.
+
+## Example
+
+This is example is included with each implementation as a test program.
+
+Suppose $`\epsilon`$ = 0.1 and P contains the following points:
+
+  * Hub = (0, 0)
+  * P<sub>1</sub> = (-0.5424, 0.8399)
+  * P<sub>2</sub> = (-0.5001, 0.8661)
+  * P<sub>3</sub> = (0.5001, 0.8661)
+  * P<sub>4</sub> = (0.5424, 0.8399)
+
+P<sub>1</sub> and P<sub>4</sub> lie slightly inside the unit circle, whereas P<sub>2</sub> and P<sub>3</sub> lie slightly outside it.
+Also P<sub>1</sub> and P<sub>2</sub> are assigned to bin 42, while P<sub>3</sub> and P<sub>4</sub> are assigned to bin 21.
+The true diameter D is 1.0848 (the distance from P<sub>1</sub> to P<sub>4</sub>).
+The approximation algorithm will discard P<sub>1</sub> and P<sub>4</sub> , leaving a roughly equilateral triangle of
+side=1. Thus D($`\epsilon`$) = 1. That is 92% of the true diameter D, within a factor of $`\epsilon`$ = 0.1 as
+required
