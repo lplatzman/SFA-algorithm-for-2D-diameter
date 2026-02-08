@@ -42,3 +42,38 @@ where 𝜃 is the angle component of the polar coordinate expression for p.  If 
 d)  Construct a new list of points from the points in the bins traversed in sequence.  The new list will contain a subset of the original list, and will be sorted by 𝜃.  This requires O(1/$`\epsilon`$) operations.
 
 This can be thought of as a partitioning algorithm (the bins induce a partition of the half-plane) or a modified bin-sorting algorithm.  Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   Because D($`\epsilon`$) is the diameter of a subset of the original points, D($`\epsilon`$) < D.  So D($`\epsilon`$) is not only an approximation; it is also a lower bound.
+
+## Analysis
+
+Consider an experiment that is not explicitly performed by the algorithm. 
+For each point p in the original set, determine the point q that was
+ultimately retained in the bin to which p was assigned. 
+If p equals q, keep it unchanged. 
+If p does not equal q, replace it with a point p’ whose polar coordinates are 
+(r(p), $`\theta`$(q)). 
+That is, slide p along a circle centered at the hub until in intersects the line from the hub to q, 
+and label the new point p’.
+Since p and p’ are associated with the same bin,
+
+```math
+|\theta(p)− \theta(p′)| ~<~ \frac{\pi}{k}.
+```
+
+Since they have the same radius r,
+
+```math
+||p-p'|| ~<~ \frac{\pi}{k} ~ r.
+```
+
+And since r < D,
+
+```math
+||p=p'|| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+```
+
+Finally, since each point in the original set differs from its corresponding point 
+in the modified set by at most ($`\epsilon`$/2) D, 
+their diameters will not diﬀer by more than $`\epsilon`$ D,
+as desired. 
+And since each modified point p’ is a convex combination of two other points in the set 
+(the hub and q), it can be ignored.
