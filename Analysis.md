@@ -10,9 +10,11 @@ Step 1.  Select a point in the convex closure of P that we will call the hub.  I
 
 Step 2.  Sort the points according to their polar-coordinate angles, taking the hub as origin. 
   
-Step 3.  Perform a [Graham scan]() of the sorted points to obtain their convex hull.  
+Step 3.  Perform a [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) 
+of the sorted points to obtain their convex hull.  
 
-Step 4.  Use the [method of rotating calipers]() to find the diameter of the convex hull.
+Step 4.  Use the [method of rotating calipers](https://en.wikipedia.org/wiki/Rotating_calipers) 
+to find the diameter of the convex hull.
 
 ___
 
