@@ -80,7 +80,7 @@ And since each modified point p’ is a convex combination of two other points i
 
 ## Example
 
-This xample is included with each implementation as a test program.
+This example is included with each implementation as a test program.
 
 Suppose $`\epsilon`$ = 0.1 and P contains the following points:
 
