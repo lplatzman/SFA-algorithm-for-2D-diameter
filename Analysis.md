@@ -94,5 +94,4 @@ P<sub>1</sub> and P<sub>4</sub> lie slightly inside the unit circle, whereas P<s
 Also P<sub>1</sub> and P<sub>2</sub> are assigned to bin 42, while P<sub>3</sub> and P<sub>4</sub> are assigned to bin 21.
 The true diameter D is 1.0848 (the distance from P<sub>1</sub> to P<sub>4</sub>).
 The approximation algorithm will discard P<sub>1</sub> and P<sub>4</sub> , leaving a roughly equilateral triangle of
-side=1. Thus D($`\epsilon`$) = 1. That is 92% of the true diameter D, within a factor $`\epsilon`$ = 0.1 as
-required
+side=1. Thus D($`\epsilon`$) = 1. That is 92% of the true diameter D, within a factor of 10% as required by $`\epsilon`$ = 0.1.
