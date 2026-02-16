@@ -46,7 +46,7 @@ This can be thought of as a partitioning algorithm (the bins induce a partition 
 ## Performance
 
 Consider an experiment that is not explicitly part of the algorithm. 
-For each point p in the original set, determine the point q that was
+For each point p in the original set P, determine the point q that was
 ultimately retained in the bin to which p was assigned. 
 If p equals q, keep it unchanged. 
 If p does not equal q, replace it with a point p’ whose polar coordinates are 
