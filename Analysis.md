@@ -27,7 +27,7 @@ Note:  In times past, much was made of the calculation of polar coordinates, whi
 
 ## The approximate algorithm
 
-In the new algorithm, Step 2 is replaced by a procedure that executes in O(n + 1/$`\epsilon`$) operations.  The other steps remain unchanged.  The diameter obtained in Step 4 is retained as D($`\epsilon`$).
+In the new algorithm, Step 2 is replaced by a procedure that executes in O(n + 1/$`\epsilon`$) operations.  The other steps remain unchanged.  The diameter obtained in Step 4 is returned as D($`\epsilon`$).
 
 The new Step 2 proceeds as follows:
 
