@@ -51,7 +51,7 @@ ultimately retained in the bin to which p was assigned.
 If p equals q, keep it unchanged. 
 If p does not equal q, replace it with a point p’ whose polar coordinates are 
 (r(p), $`\theta`$(q)). 
-That is, slide p along a circle centered at the hub until in intersects the line from the hub to q, 
+That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, 
 and label the new point p’.
 Since p and p’ are associated with the same bin,
 
