@@ -41,7 +41,7 @@ c)  For each given point p, compute a bin index i = $`\left \lfloor \frac{k \the
 
 d)  Construct a new list of points from the points in the bins traversed in sequence.  The new list will contain a subset of the original list, and will be sorted by 𝜃.  This requires O(1/$`\epsilon`$) operations.
 
-This can be thought of as a partitioning algorithm (the bins induce a partition of the half-plane) or a modified bin-sorting algorithm.  Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   Because D($`\epsilon`$) is the diameter of a subset of the original points, D($`\epsilon`$) $`\leq`$ D.  So D($`\epsilon`$) is not only an approximation; it is also a lower bound.
+This can be thought of as a partitioning algorithm (the bins induce a partition of the half-plane) or a modified bin-sorting algorithm.  Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   Because $`D(\epsilon)`$ is the diameter of a subset of the original points, $`D(\epsilon) \leq D`$.  So $`D(\epsilon)`$ is not only an approximation; it is also a lower bound.
 
 ## Performance
 
