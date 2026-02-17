@@ -89,7 +89,7 @@ Since a' and b' lie in the list produced by the third algorithm,
 \|a'-b'\| ~\leq~ D(\epsilon). 
 ```
 \
-There exists at least one pair of points a, b such that $`\|a-b\| ~=~ D.`$  So 
+There exists at least one pair of points a, b in P such that $`\|a-b\| ~=~ D.`$  So 
 
 ```math
 D ~\leq~ \epsilon~D + D(\epsilon).  
