@@ -53,13 +53,13 @@ c)  For each given point p, compute a bin index i =
 $`\left \lfloor \frac{k \theta}{\pi} \right \rfloor `$ 
 and add p to B[i].
 
-d) For each nonempty bin B, select a point q whose polar component $`\theta`$ is greatest (among points in the bin).  Then replace each point p in B with a point p' whose polar coordinates are (r(p), $`\theta`$(q)). That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, and label the new point p’.
+d) For each nonempty bin B, select a point q whose polar component r is greatest (among points in the bin).  Then replace each point p in B with a point p' whose polar coordinates are (r(p), $`\theta`$(q)). That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, and label the new point p’.
 
 e) Construct a new list of points from the points in the bins.  Sort the list by $`\theta`$ and pass it along to Step 3.
 
-We now have three versions of the algorithm, each of which produces a list of points at the end of Step 2. 
+We now have three versions of the algorithm, each of which produces a sorted list of points at the end of Step 2. 
 
-The points placed in a bin during part (c) of the third algorithm lie on a line segment from the hub to q.  So they are convex combinations of the hub and q, and so do not affect the diameter.  So the diameter produced by the third algorithm is the same as that produced by the second algorithm, also known as $`D(\epsilon)`$.
+The points placed in a bin during part (c) of the third algorithm lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and so do not affect the diameter.  In other words, the diameter produced by the third algorithm is the same as that produced by the second algorithm.
 
 Since p and p’ are associated with the same bin,
 
