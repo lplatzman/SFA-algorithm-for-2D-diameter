@@ -53,7 +53,7 @@ c)  For each given point p, compute a bin index i =
 $`\left \lfloor \frac{k \theta}{\pi} \right \rfloor `$ 
 and add p to B[i].
 
-d) For each nonempty bin B, select a point q whose polar component r is greatest (among points in the bin).  Then replace each point p in B with a point p' whose polar coordinates are (r(p), $`\theta`$(q)). That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, and label the new point p’.
+d) For each nonempty bin B, select a point q whose polar component r is greatest (among points in B).  Then replace each point p in B with a point p' whose polar coordinates are (r(p), $`\theta`$(q)). That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, and label the new point p’.
 
 e) Construct a new list of points from the points in the bins.  Sort the list by $`\theta`$ and pass it along to Step 3.
 
