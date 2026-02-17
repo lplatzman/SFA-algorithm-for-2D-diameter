@@ -57,7 +57,7 @@ d) For each nonempty bin B, select a point q whose polar component r is greatest
 
 e) Construct a new list of points from the points in the bins.  Sort the list by $`\theta`$ and pass it to Step 3.
 
-The points placed in a bin during part (c) lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and do not affect the diameter, which remains $`D(\epsilon)`$.
+The modified points placed in a bin during part (c) lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and do not affect the diameter, which remains $`D(\epsilon)`$.
 
 Since p and p’ are associated with the same bin,
 
