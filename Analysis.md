@@ -6,15 +6,17 @@ These notes are posted on [GitHub](https://github.com/lplatzman/SFA-algorithm-fo
 
 Here is how the exact diameter of a set P of n points, is computed:
 
-Step 1.  Select a point in the convex closure of P that we will call the *hub*.  In principle, it doesn’t matter where the hub is located.  But traditionally, the hub is an extreme point of the given set, that minimizes y and then (among points that minimize y) minimizes x.
+Step 1.  Select a point in the convex hull of P that we will call the *hub*.  
+In principle, it doesn’t matter where the hub is located.  
+But traditionally, the hub is an extreme point of P that minimizes y and then (among points that minimize y) minimizes x.
 
 Step 2.  Sort the points according to their polar-coordinate angles, taking the hub as origin. 
   
 Step 3.  Perform a [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) 
-of the sorted points to obtain their convex hull.  
+on the sorted points to obtain their convex hull.  
 
 Step 4.  Use the [method of rotating calipers](https://en.wikipedia.org/wiki/Rotating_calipers) 
-to find the diameter of the convex hull.
+to obtain the diameter.
 
 ___
 
@@ -23,7 +25,12 @@ Note:  Steps 1, 3 and 4 require O(n) operations.   Only Step 2 (sorting) require
 
 Note:  In this account, we have deliberately glossed over a difficulty that arises when computing the polar coordinates of the hub itself.  So does everyone else.  For details, see the code.
 
-Note:  In times past, much was made of the calculation of polar coordinates, which requires trigonometric functions.  It hardly matters today, when these functions are evaluated in dedicated hardware, in a time roughly the same as that of adding or multiplying.
+Note:  In times past, much was made of the calculation of polar coordinates, which requires trigonometric functions.  
+That hardly matters today, when these functions are evaluated in dedicated hardware, in a time roughly the same as that of adding or multiplying.
+
+Note:  The diameter of P equals the diameter of the convex hull of P.  
+
+
 
 ## The approximate algorithm
 
