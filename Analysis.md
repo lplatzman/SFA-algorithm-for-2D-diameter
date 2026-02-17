@@ -57,9 +57,7 @@ d) For each nonempty bin B, select a point q whose polar component r is greatest
 
 e) Construct a new list of points from the points in the bins.  Sort the list by $`\theta`$ and pass it along to Step 3.
 
-We now have three versions of the algorithm, each of which produces a sorted list of points at the end of Step 2. 
-
-The points placed in a bin during part (c) of the third algorithm lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and so do not affect the diameter.  In other words, the diameter produced by the third algorithm is the same as that produced by the second algorithm.
+The points placed in a bin during part (c) lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and so do not affect the diameter, which remains $`D(\epsilon)`$.
 
 Since p and p’ are associated with the same bin,
 
