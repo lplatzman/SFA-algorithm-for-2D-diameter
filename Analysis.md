@@ -46,20 +46,20 @@ This can be thought of as a partitioning algorithm (the bins induce a partition 
 ## Performance
 
 Consider an experiment that is not explicitly part of the algorithm. 
-For each point p in the original set P, determine the point q that was
-ultimately retained in the bin to which p was assigned. 
+For each point p in the original set P, determine the point q that 
+ultimately will be retained in the bin to which p was assigned. 
 If p equals q, keep it unchanged. 
 If p does not equal q, replace it with a point p’ whose polar coordinates are 
 (r(p), $`\theta`$(q)). 
 That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, 
 and label the new point p’.
+
 Since p and p’ are associated with the same bin,
 
 ```math
 |\theta(p)− \theta(p′)| ~<~ \frac{\pi}{k}.
 ```
-
-Since they have the same radius r,
+Since p and p' have the same radius r,
 
 ```math
 \|p-p'\| ~<~ \frac{\pi}{k} ~ r.
@@ -71,12 +71,25 @@ And since r < D,
 \|p-p'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
 
-Finally, since each point in the original set differs from its corresponding point 
-in the modified set by at most ($`\epsilon`$/2) D, 
-their diameters will not diﬀer by more than $`\epsilon`$ D,
-as desired. 
-And since each modified point p’ is a convex combination of two other points in the set 
-(the hub and q), it can be ignored.
+For any a,b $\in$ P,
+
+```math
+\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\| ~\leq~ \epsilon~D + D(\epsilon) 
+```
+
+So 
+
+```math
+D - D(\epsilon) ~\leq \epsilon D 
+```
+
+
+And we already know that D $\geq$ D($\epsilon$).  So |D - D($\epsilon$)| $\leq$ $\epsilon$ D, as required. 
+
+Finally, p’ is a convex combination of two other points in P 
+(the hub and q), so it can be discarded before computing D($\epsilon$).
+
+
 
 ## Example
 
