@@ -52,10 +52,8 @@ If p equals q, keep it unchanged.
 If p does not equal q, replace it with a point p’ whose polar coordinates are 
 (r(p), $`\theta`$(q)). 
 That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, 
-and label the new point p’.  
-p’ is a convex combination of two other points in P 
-(the hub and q), so it can be discarded before computing D($\epsilon$).
-
+and label the new point p’.  Because p’ is a convex combination of two other points in P 
+(the hub and q), it can be discarded before computing D($\epsilon$).
 
 
 Since p and p’ are associated with the same bin,
