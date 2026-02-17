@@ -25,8 +25,6 @@ Note:  In times past, much was made of the calculation of polar coordinates, whi
 
 Note:  The diameter of P equals the diameter of the convex hull of P.  
 
-
-
 ## The approximate algorithm
 
 In the new algorithm, Step 2 is replaced by a procedure that executes in O(n + 1/$`\epsilon`$) operations.  The other steps remain unchanged.  The diameter obtained in Step 4 is returned as D($`\epsilon`$).
@@ -45,16 +43,23 @@ This can be thought of as a partitioning algorithm (the bins induce a partition 
 
 ## Performance
 
-Consider an experiment that is not explicitly part of the algorithm. 
-For each point p in the original set P, determine the point q that 
-ultimately will be retained in the bin to which p was assigned. 
-If p equals q, keep it unchanged. 
-If p does not equal q, replace it with a point p’ whose polar coordinates are 
-(r(p), $`\theta`$(q)). 
-That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, 
-and label the new point p’.  Because p’ is a convex combination of two other points in P 
-(the hub and q), it can be discarded before computing D($\epsilon$).
+Consider a third variation of the algorithm where Step 2 takes the following form:
 
+a) Compute k = $`\left \lceil \frac{2 \pi}{\epsilon} \right \rceil `$.
+
+b) Prepare k empty bins B[i], i = 0, … , k-1.
+
+c)  For each given point p, compute a bin index i = 
+$`\left \lfloor \frac{k \theta}{\pi} \right \rfloor `$ 
+and add p to B[i].
+
+d) For each nonempty bin B, select a point q whose polar component $`\theta`$ is greatest (among points in the bin).  Then replace each point p in B with a point p' whose polar coordinates are (r(p), $`\theta`$(q)). That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, and label the new point p’.
+
+e) Construct a new list of points from the points in the bins.  Sort the list by $`\theta`$ and pass it along to Step 3.
+
+We now have three versions of the algorithm, each of which produces a list of points at the end of Step 2. 
+
+The points placed in a bin during part (c) of the third algorithm lie on a line segment from the hub to q.  So they are convex combinations of the hub and q, and so do not affect the diameter.  So the diameter produced by the third algorithm is the same as that produced by the second algorithm, also known as $`D(\epsilon)`$.
 
 Since p and p’ are associated with the same bin,
 
