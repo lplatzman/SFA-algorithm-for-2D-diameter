@@ -6,17 +6,13 @@ These notes are posted on [GitHub](https://github.com/lplatzman/SFA-algorithm-fo
 
 Here is how the exact diameter of a set P of n points, is computed:
 
-Step 1.  Select a point in the convex hull of P that we will call the *hub*.  
-In principle, it doesn’t matter where the hub is located.  
-But traditionally, the hub is an extreme point of P that minimizes y and then (among points that minimize y) minimizes x.
+Step 1.  Select a point in the convex hull of P that we will call the *hub*.  In principle, it doesn’t matter where the hub is located. But traditionally, the hub is an extreme point of P that minimizes y and then (among points that minimize y) minimizes x.
 
 Step 2.  Sort the points according to their polar-coordinate angles, taking the hub as origin. 
   
-Step 3.  Perform a [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) 
-on the sorted points to obtain their convex hull.  
+Step 3.  Perform a [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) on the sorted points to obtain their convex hull.  
 
-Step 4.  Use the [method of rotating calipers](https://en.wikipedia.org/wiki/Rotating_calipers) 
-to obtain the diameter.
+Step 4.  Use the [method of rotating calipers](https://en.wikipedia.org/wiki/Rotating_calipers) to obtain the diameter.
 
 ___
 
@@ -25,8 +21,7 @@ Note:  Steps 1, 3 and 4 require O(n) operations.   Only Step 2 (sorting) require
 
 Note:  In this account, we have deliberately glossed over a difficulty that arises when computing the polar coordinates of the hub itself.  So does everyone else.  For details, see the code.
 
-Note:  In times past, much was made of the calculation of polar coordinates, which requires trigonometric functions.  
-That hardly matters today, when these functions are evaluated in dedicated hardware, in a time roughly the same as that of adding or multiplying.
+Note:  In times past, much was made of the calculation of polar coordinates, which requires trigonometric functions.  That hardly matters today, when these functions are evaluated in dedicated hardware, in a time roughly the same as that of adding or multiplying.
 
 Note:  The diameter of P equals the diameter of the convex hull of P.  
 
@@ -42,9 +37,7 @@ a) Compute k = $`\left \lceil \frac{2 \pi}{\epsilon} \right \rceil `$.
 
 b) Prepare k empty bins B[i], i = 0, … , k-1.
 
-c)  For each given point p, compute a bin index i = 
-$`\left \lfloor \frac{k \theta}{\pi} \right \rfloor`$, 
-where 𝜃 is the angle component of the polar coordinate expression for p.  If B[i] is empty, place p in B[i].  If B[i] already contains a point, keep the point of greater radius r and discard the other. This requires O(n) operations.
+c)  For each given point p, compute a bin index i = $`\left \lfloor \frac{k \theta}{\pi} \right \rfloor`$, where 𝜃 is the angle component of the polar coordinate expression for p.  If B[i] is empty, place p in B[i].  If B[i] already contains a point, keep the point of greater radius r and discard the other. This requires O(n) operations.
 
 d)  Construct a new list of points from the points in the bins traversed in sequence.  The new list will contain a subset of the original list, and will be sorted by 𝜃.  This requires O(1/$`\epsilon`$) operations.
 
