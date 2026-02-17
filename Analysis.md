@@ -82,10 +82,16 @@ For any a,b $\in$ P,
 \|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\| ~\leq~ \epsilon~D + D(\epsilon) 
 ```
 
-So 
+Since a' and b' lie in the list produced by the third algorithm, 
 
 ```math
-D - D(\epsilon) ~\leq \epsilon D 
+\|a'-b'\| ~\leq~ D(\epsilon) 
+```
+
+There exists at least one pair of points a, b such that $`\|a'-b'\| ~=~ D.  So 
+
+```math
+D ~\leq~ \epsilon~D + D(\epsilon)  
 ```
 
 We already know that D($\epsilon$) $\leq$ D.  So |D - D($\epsilon$)| $\leq$ $\epsilon$ D, as required. 
