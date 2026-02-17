@@ -84,7 +84,7 @@ D - D(\epsilon) ~\leq \epsilon D
 ```
 
 
-We already know that D($\epsilon$) $\geq$ D.  So |D - D($\epsilon$)| $\leq$ $\epsilon$ D, as required. 
+We already know that D($\epsilon$) $\leq$ D.  So |D - D($\epsilon$)| $\leq$ $\epsilon$ D, as required. 
 
 Finally, p’ is a convex combination of two other points in P 
 (the hub and q), so it can be discarded before computing D($\epsilon$).
