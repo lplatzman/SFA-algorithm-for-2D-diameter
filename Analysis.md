@@ -112,8 +112,18 @@ Since a' and b' lie in the list produced by part (e),
 ```math
 \|a'-b'\| ~\leq~ D(\epsilon). 
 ```
+\
 
-We already know that D($`\epsilon`$) $`\leq`$ D.  So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as required. 
+Putting all this together, we obtain
+
+```math
+D ~\leq~ \epsilon~D + D(\epsilon).
+```
+\
+
+And we already know that D($`\epsilon`$) $`\leq`$ D.  
+
+So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as required. 
 
 ## Example
 
