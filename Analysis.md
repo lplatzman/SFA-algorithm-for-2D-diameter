@@ -57,7 +57,11 @@ d) For each nonempty bin B, select a point q whose polar component r is greatest
 
 e) Construct a new list of points from the points in the bins.  Sort the list by $`\theta`$ and pass it to Step 3.
 
+___
+
 The modified points placed in a bin during part (d) lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and do not affect the convex hull of the list produced in part (e), whose diameter remains $`D(\epsilon)`$.
+
+___
 
 Since p and p’ are associated with the same bin,
 
@@ -76,19 +80,30 @@ And since r < D,
 ```math
 \|p-p'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
-\
-For any a,b $\in$ P,
+
+___
+
+From the triangle inequality:
 
 ```math
-\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|
+\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
 ```
-\
-where a' is the modified point replacing a in part (d), and b' is the modified point replacing b.  So
+
+
+Suppose that 
+
+* a and b are points such that $`\|a-b\| = D`$, 
+
+* a' is the modified point replacing a in part (d), and 
+
+* b' is the modified point replacing b.
+
+Now
 
 ```math
 \|a-a'\| ~\leq~ \frac{\epsilon}{2} ~ D
 ```
-\
+
 and 
 
 ```math
@@ -102,15 +117,7 @@ Since a' and b' lie in the list produced by part (e),
 \|a'-b'\| ~\leq~ D(\epsilon). 
 ```
 \
-There exists at least one pair of points a, b in P such that $`\|a-b\| ~=~ D.`$  So 
-
-```math
-D ~\leq~ \epsilon~D + D(\epsilon).  
-```
-\
 We already know that D($`\epsilon`$) $`\leq`$ D.  So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as required. 
-
-
 
 ## Example
 
