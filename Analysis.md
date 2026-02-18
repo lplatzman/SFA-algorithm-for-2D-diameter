@@ -83,13 +83,6 @@ And since r < D,
 
 ___
 
-From the triangle inequality:
-
-```math
-\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
-```
-
-
 Suppose that 
 
 * a and b are points such that $`\|a-b\| = D`$, 
@@ -98,25 +91,28 @@ Suppose that
 
 * b' is the modified point replacing b.
 
+From the triangle inequality:
+
+```math
+\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
+```
+
 Now
 
 ```math
 \|a-a'\| ~\leq~ \frac{\epsilon}{2} ~ D
 ```
-
 and 
-
 ```math
 \|b-b'\| ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
-\
 
 Since a' and b' lie in the list produced by part (e), 
 
 ```math
 \|a'-b'\| ~\leq~ D(\epsilon). 
 ```
-\
+
 We already know that D($`\epsilon`$) $`\leq`$ D.  So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as required. 
 
 ## Example
