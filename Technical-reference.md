@@ -52,12 +52,15 @@ But first, some terminology:
 POLAR COORDINATES
 * r(p) is the radius component of the polar representation of point p.
 * $`\theta`$(p) is the angle component of the polar representation of point p.
-* $`\textlangle r,~ \theta`\textrangle $ is a point whose polar representation is radius:r and angle:$`\theta`$.
+* $`\textlangle r,~ \theta \textrangle`$ is a point whose polar representation is radius:r and angle:$`\theta`$.
 
 BIN INDEXING
 * index(p) is the bin index for point p.
 * v[i] is a point of greatest radius among points whose bin index is i.
 * v(p) = v[index(p)]
+
+REDUCED SET OF POINTS
+* $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub}.
 
 DIAMETER ENDPOINTS
 * a and a' are points in P such that $`\|a-a'\|`$ = D.
@@ -94,34 +97,19 @@ And since r < D,
 \
 Similarly,
 ```math
-\|a'-b'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+\|a'-b'\| ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
-\
-__
+___
+
+Also, b lies on the line segment from the hub to v(b).  So it lies in the convex hull of $`P(\epsilon).`$
+Similarly for b'. Therefore, $`\|b-b'\| ~\leq~ D(\epsilon).`$
+___
 
 From the triangle inequality:
 
 ```math
 \|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
 ```
-
-Now
-
-```math
-\|a-a'\| ~\leq~ \frac{\epsilon}{2} ~ D
-```
-and 
-```math
-\|b-b'\| ~\leq~ \frac{\epsilon}{2} ~ D.
-```
-
-Since a' and b' lie in the list produced by part (e), 
-
-```math
-\|a'-b'\| ~\leq~ D(\epsilon). 
-```
-
-And we already know that D($`\epsilon`$) $`\leq`$ D.  
 
 Putting all this together, 
 
