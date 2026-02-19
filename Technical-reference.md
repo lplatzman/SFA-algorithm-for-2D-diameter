@@ -37,7 +37,7 @@ b) Prepare k empty bins B[i], i = 0, … , k-1.
 
 c)  For each given point p, compute a bin index i = $`\left \lfloor \frac{k \theta}{\pi} \right \rfloor`$, where 𝜃 is the angle component of the polar coordinate expression for p.  If B[i] is empty, place p in B[i].  If B[i] already contains a point, keep the point of greater radius r and discard the other. This requires O(n) operations.
 
-d)  Construct a new list of points from the points in the bins traversed in sequence.  The new list will contain a subset of the original list, and will be sorted by 𝜃.  This requires O(1/$`\epsilon`$) operations.
+d)  Construct a new list of points from the points in the bins traversed in sequence, along with the hub.  The new list will contain a subset of the original list, and will be sorted by 𝜃.  This requires O(1/$`\epsilon`$) operations.
 
 This can be thought of as a partitioning algorithm (the bins induce a partition of the half-plane) or a modified bin-sorting algorithm.  Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   Because $`D(\epsilon)`$ is the diameter of a subset of the original points, $`D(\epsilon) \leq D`$.  So $`D(\epsilon)`$ is not only an approximation; it is also a lower bound.
 
