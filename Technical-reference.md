@@ -47,58 +47,62 @@ This can be thought of as a partitioning algorithm (the bins induce a partition 
 
 It remains to show that |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$.
 
-Consider a third variation of the algorithm where Step 2 takes the following form:
+But first, some terminology:
 
-a) Compute k = $`\left \lceil \frac{2 \pi}{\epsilon} \right \rceil `$.
+POLAR COORDINATES
+* r(p) is the radius component of the polar representation of point p.
+* $`\theta`$(p) is the angle component of the polar representation of point p.
+* $`\textlangle r,~ \theta`\textrangle $ is a point whose polar representation is radius:r and angle:$`\theta`$.
 
-b) Prepare k empty bins B[i], i = 0, … , k-1.
+BIN INDEXING
+* index(p) is the bin index for point p.
+* v[i] is a point of greatest radius among points whose bin index is i.
+* v(p) = v[index(p)]
 
-c)  For each given point p, compute a bin index i = 
-$`\left \lfloor \frac{k \theta}{\pi} \right \rfloor `$ 
-and add p to B[i].
+DIAMETER ENDPOINTS
+* a and a' are points in P such that $`\|a-a'\|`$ = D.
 
-d) For each nonempty bin B, select a point q whose polar component r is greatest (among points in B).  Then replace each point p in B with a point p' whose polar coordinates are (r(p), $`\theta`$(q)). That is, slide p along a circle centered at the hub until it intersects the line from the hub to q, and label the new point p’.
-
-e) Construct a new list of points from the points in the bins, and pass it to Step 3.
-
-___
-
-The modified points placed in a bin during part (d) lie on a line segment joining the hub to q.  So they are convex combinations of the hub and q, and do not affect the convex hull of the list produced in part (e), whose diameter remains $`D(\epsilon)`$.
-
-___
-
-Since p and p’ are associated with the same bin,
+Now let
 
 ```math
-|\theta(p)− \theta(p′)| ~<~ \frac{\pi}{k}.
+b ~=~ \textlangle~ r(a),~ \theta(v(a)) ~\textrangle
 ```
 \
-Since p and p' have the same radius r,
+and
 
 ```math
-\|p-p'\| ~<~ \frac{\pi}{k} ~ r.
+b' ~=~ \textlangle~ r(a'),~ \theta(v(a')) ~\textrangle
+```
+\
+Since a and b are associated with the same bin,
+
+```math
+|\theta(a)− \theta(b)| ~<~ \frac{\pi}{k}.
+```
+\
+Since a and b have the same radius r,
+
+```math
+\|a-b\| ~<~ \frac{\pi}{k} ~ r.
 ```
 \
 And since r < D,
 
 ```math
-\|p-p'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+\|a-b\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
-
-___
-
-Suppose that 
-
-* a and b are points such that $`\|a-b\| = D`$, 
-
-* a' is the modified point replacing a in part (d), and 
-
-* b' is the modified point replacing b.
+\
+Similarly,
+```math
+\|a'-b'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+```
+\
+__
 
 From the triangle inequality:
 
 ```math
-\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
+\|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
 ```
 
 Now
