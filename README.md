@@ -24,4 +24,4 @@ Zhipeng Wang and Wei Niu, posted [here](https://pmc.ncbi.nlm.nih.gov/articles/PM
 Their paper is entitled *A simple approximation algorithm for the diameter of a set of points in an Euclidean plane*. Accordingly, 
 we have named our version of their algorithm SFA, for Simpler, Faster and Approximate.
 
-More details of the algorithm can be found on the [Analysis page](/Analysis.md).
+More details of the algorithm can be found on the [Technical Reference](/Technical-reference.md).
