@@ -102,7 +102,10 @@ Similarly,
 ___
 
 Also, b lies on the line segment from the hub to v(b).  So it lies in the convex hull of $`P(\epsilon).`$
-Similarly for b'. Therefore, $`\|b-b'\| ~\leq~ D(\epsilon).`$
+Similarly for b'. Therefore, 
+```math
+\|b-b'\| ~\leq~ D(\epsilon).
+```
 ___
 
 From the triangle inequality:
