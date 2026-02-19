@@ -60,7 +60,7 @@ BIN INDEXING
 * v(p) = v[index(p)]
 
 REDUCED SET OF POINTS
-* $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub}.
+* $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub}.   This is the set of points passed to Step 3 in the SFA algorithm.
 
 DIAMETER ENDPOINTS
 * a and a' are points in P such that $`\|a-a'\|`$ = D.
