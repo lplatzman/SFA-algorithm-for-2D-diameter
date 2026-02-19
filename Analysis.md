@@ -121,7 +121,7 @@ Putting all this together, we obtain
 D(\epsilon) ~\leq~ D ~\leq~ \epsilon~D + D(\epsilon).
 ```
 
-So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as required. 
+So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as claimed. 
 
 ## Example
 
