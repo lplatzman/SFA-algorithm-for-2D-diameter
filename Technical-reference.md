@@ -1,4 +1,4 @@
-# SFA algorithm - technical reference
+# SFA Algorithm - Technical Reference
 
 These notes are posted on [GitHub](https://github.com/lplatzman/SFA-algorithm-for-2D-diameter) along with implementations of the algorithm.
 
