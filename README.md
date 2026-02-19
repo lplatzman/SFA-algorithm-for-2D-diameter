@@ -7,7 +7,7 @@ More precisely:
 * The diameter of a set is the greatest distance between two points in the set.
 * The algorithm returns an approximation D($`\epsilon`$) to the true diameter D, such that
 ```math
-|D(\epsilon) - D| \leq\epsilon\cdot D.
+|D - D(\epsilon)| \leq\epsilon\cdot D.
 ```
 <br>
 
