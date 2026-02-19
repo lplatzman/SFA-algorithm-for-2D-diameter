@@ -115,7 +115,7 @@ Since a' and b' lie in the list produced by part (e),
 
 And we already know that D($`\epsilon`$) $`\leq`$ D.  
 
-Putting all this together, we obtain
+Putting all this together, 
 
 ```math
 D(\epsilon) ~\leq~ D ~\leq~ \epsilon~D + D(\epsilon).
