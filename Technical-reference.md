@@ -127,7 +127,12 @@ Putting all this together,
 ```math
 D(\epsilon) ~\leq~ D ~\leq~ \epsilon~D + D(\epsilon).
 ```
-So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as claimed. 
+\
+Hence
+```math
+0 ~\leq~ D - D(\epsilon) ~\leq~ \epsilon~D.
+```
+
 
 ## Example
 
