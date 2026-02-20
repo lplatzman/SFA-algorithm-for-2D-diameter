@@ -77,8 +77,13 @@ From the triangle inequality:
 \|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
 ```
 \
-Select a and a' in P such that $`\|a-a'\|`$ = D.  And let
+Select a and a' in P such that: 
 
+```math
+\|a-a'\| = D.
+```
+\
+And define:
 ```math
 b ~=~ \textlangle~ r(a),~ \theta(v[index(a)]) ~\textrangle
 ```
