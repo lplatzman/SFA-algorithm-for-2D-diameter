@@ -115,7 +115,7 @@ Similarly,
 ```
 ___
 
-Also, b lies on the line segment from the hub to v(b).  So it lies in the convex hull of $`P(\epsilon).`$
+Also, b lies on the line segment from the hub to v[index(b)].  So it lies in the convex hull of $`P(\epsilon).`$
 Similarly for b'. Therefore, 
 ```math
 \|b-b'\| ~\leq~ D(\epsilon).
