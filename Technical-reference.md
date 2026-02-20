@@ -77,7 +77,7 @@ From the triangle inequality:
 \|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
 ```
 \
-Select a and a' in P such that: 
+Select a and a' in P so that: 
 
 ```math
 \|a-a'\| = D.
