@@ -127,10 +127,13 @@ Putting all this together,
 ```math
 D(\epsilon) ~\leq~ D ~\leq~ \epsilon~D + D(\epsilon).
 ```
-\
-Hence
+/
 ```math
 0 ~\leq~ D - D(\epsilon) ~\leq~ \epsilon~D.
+```
+/
+```math
+|D - D(\epsilon)| ~\leq~ \epsilon~D.
 ```
 
 
