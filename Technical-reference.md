@@ -65,7 +65,6 @@ POLAR COORDINATES
 BIN INDEXING
 * index(p) is the bin index for point p.
 * v[i] is a point of greatest radius among points whose bin index is i.
-* v(p) = v[index(p)]
 
 REDUCED SET OF POINTS
 * $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub}.   This is the set of points passed to Step 3 in the SFA algorithm.
@@ -76,13 +75,13 @@ DIAMETER ENDPOINTS
 Now let
 
 ```math
-b ~=~ \textlangle~ r(a),~ \theta(v(a)) ~\textrangle
+b ~=~ \textlangle~ r(a),~ \theta(v[index(a)]) ~\textrangle
 ```
 \
 and
 
 ```math
-b' ~=~ \textlangle~ r(a'),~ \theta(v(a')) ~\textrangle
+b' ~=~ \textlangle~ r(a'),~ \theta(v[index(a')]) ~\textrangle
 ```
 \
 From the triangle inequality:
