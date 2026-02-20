@@ -51,7 +51,7 @@ D(\epsilon) \leq D.
 \
 So $`D(\epsilon)`$ is not only an approximation; it is also a lower bound.
 
-## Analysis
+## Performance Analysis
 
 It remains to show that |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$.
 
@@ -85,6 +85,13 @@ and
 b' ~=~ \textlangle~ r(a'),~ \theta(v(a')) ~\textrangle
 ```
 \
+From the triangle inequality:
+
+```math
+\|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
+```
+___
+
 Since a and b are associated with the same bin,
 
 ```math
@@ -116,18 +123,11 @@ Similarly for b'. Therefore,
 ```
 ___
 
-From the triangle inequality:
-
-```math
-\|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
-```
-
 Putting all this together, 
 
 ```math
 D(\epsilon) ~\leq~ D ~\leq~ \epsilon~D + D(\epsilon).
 ```
-
 So |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$, as claimed. 
 
 ## Example
