@@ -41,7 +41,7 @@ d)  Construct a new list of points from the points in the bins traversed in sequ
 
 ___
 
-This can be thought of as a partitioning algorithm (the bins induce a partition of the half-plane) or a modified bin-sorting algorithm. Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   
+This can be thought of as a partitioning algorithm (the bins induce a partition on the half-plane) or a modified bin-sorting algorithm. Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   
 
 Because $`D(\epsilon)`$ is the diameter of a subset of the original points, 
 
