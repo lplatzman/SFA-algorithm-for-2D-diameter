@@ -53,7 +53,7 @@ So $`D(\epsilon)`$ is not only an approximation; it is also a lower bound.
 
 ## Performance Analysis
 
-It remains to show that |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$.
+Here we show that |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$.
 
 But first, some terminology:
 
