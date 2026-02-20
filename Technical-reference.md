@@ -76,7 +76,7 @@ From the triangle inequality:
 ```math
 \|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
 ```
-
+\
 Select a and a' in P such that $`\|a-a'\|`$ = D.  And let
 
 ```math
