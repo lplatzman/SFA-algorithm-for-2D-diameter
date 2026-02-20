@@ -138,7 +138,7 @@ So
 0 ~\leq~ D - D(\epsilon) ~\leq~ \epsilon~D,
 ```
 \
-Or, equivalently,
+and
 ```math
 |D - D(\epsilon)| ~\leq~ \epsilon~D.
 ```
