@@ -88,7 +88,7 @@ and
 ```math
 b' ~=~ \textlangle~ r(a'),~ \theta(v[index(a')]) ~\textrangle
 ```
-\
+
 ___
 
 Since a and b are associated with the same bin,
