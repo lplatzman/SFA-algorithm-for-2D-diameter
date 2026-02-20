@@ -43,13 +43,6 @@ ___
 
 This can be thought of as a partitioning algorithm (the bins induce a partition on the half-plane) or a modified bin-sorting algorithm. Either way, the general idea is to use the bins to produce a reduced set of points, and compute its diameter exactly.   
 
-Because $`D(\epsilon)`$ is the diameter of a subset of the original points, 
-
-```math
-D(\epsilon) \leq D.
-```
-\
-So $`D(\epsilon)`$ is not only an approximation; it is also a lower bound.
 
 ## Performance Analysis
 
@@ -124,6 +117,13 @@ Also, b lies on the line segment from the hub to v[index(b)].  So it lies in the
 Similarly for b'. Therefore, 
 ```math
 \|b-b'\| ~\leq~ D(\epsilon).
+```
+___
+
+Finally, because $`D(\epsilon)`$ is the diameter of a subset of the original points, 
+
+```math
+D(\epsilon) \leq D.
 ```
 ___
 
