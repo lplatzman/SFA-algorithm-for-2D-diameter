@@ -69,10 +69,15 @@ BIN INDEXING
 REDUCED SET OF POINTS
 * $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub}.   This is the set of points passed to Step 3 in the SFA algorithm.
 
-DIAMETER ENDPOINTS
-* a and a' are points in P such that $`\|a-a'\|`$ = D.
+___
 
-Now let
+From the triangle inequality:
+
+```math
+\|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
+```
+
+Select a and a' in P such that $`\|a-a'\|`$ = D.  And let
 
 ```math
 b ~=~ \textlangle~ r(a),~ \theta(v[index(a)]) ~\textrangle
@@ -84,11 +89,6 @@ and
 b' ~=~ \textlangle~ r(a'),~ \theta(v[index(a')]) ~\textrangle
 ```
 \
-From the triangle inequality:
-
-```math
-\|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
-```
 ___
 
 Since a and b are associated with the same bin,
