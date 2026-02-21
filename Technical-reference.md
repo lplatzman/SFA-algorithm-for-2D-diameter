@@ -67,56 +67,56 @@ ___
 From the triangle inequality:
 
 ```math
-\|a-a'\| ~\leq~ \|a-b\| ~+~ \|b-b'\| ~+~ \|b'-a'\|.
+\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
 ```
 \
-Select a and a' in P so that: 
+Select a and b in P so that: 
 
 ```math
-\|a-a'\| = D.
+\|a-b\| = D.
 ```
 \
 And define:
 ```math
-b ~=~ \textlangle~ r(a),~ \theta(v[index(a)]) ~\textrangle
+a' ~=~ \textlangle~ r(a),~ \theta(v[index(a)]) ~\textrangle
 ```
 \
 and
 
 ```math
-b' ~=~ \textlangle~ r(a'),~ \theta(v[index(a')]) ~\textrangle
+b' ~=~ \textlangle~ r(b),~ \theta(v[index(b)]) ~\textrangle
 ```
 
 ___
 
-Since a and b are associated with the same bin,
+Since a and a' are associated with the same bin,
 
 ```math
-|\theta(a)− \theta(b)| ~<~ \frac{\pi}{k}.
+|\theta(a)− \theta(a')| ~<~ \frac{\pi}{k}.
 ```
 \
-Since a and b have the same radius r,
+Since a and a' have the same radius r,
 
 ```math
-\|a-b\| ~<~ \frac{\pi}{k} ~ r.
+\|a-a'\| ~<~ \frac{\pi}{k} ~ r.
 ```
 \
 And since r < D,
 
 ```math
-\|a-b\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
+\|a-a'\| ~<~ \frac{\pi}{k} ~ D ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
 \
 Similarly,
 ```math
-\|a'-b'\| ~\leq~ \frac{\epsilon}{2} ~ D.
+\|b-b'\| ~\leq~ \frac{\epsilon}{2} ~ D.
 ```
 ___
 
-Also, b lies on the line segment from the hub to v[index(b)].  So it lies in the convex hull of $`P(\epsilon).`$
+Also, a' lies on the line segment from the hub to v[index(a')].  So it lies in the convex hull of $`P(\epsilon).`$
 Similarly for b'. Therefore, 
 ```math
-\|b-b'\| ~\leq~ D(\epsilon).
+\|a'-b'\| ~\leq~ D(\epsilon).
 ```
 ___
 
