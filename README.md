@@ -11,9 +11,9 @@ More precisely:
 ```
 <br>
 
-* It also returns a pair of points a and b in the given set, such that 
+* It also returns points p and q in the given set, such that 
 ```math
-\|a-b\| = D(\epsilon).
+\|p-q\| = D(\epsilon).
 ```
 <br>
 
