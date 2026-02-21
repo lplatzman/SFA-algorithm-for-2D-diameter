@@ -64,12 +64,6 @@ REDUCED SET OF POINTS
 
 ___
 
-From the triangle inequality:
-
-```math
-\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
-```
-\
 Select a and b in P so that: 
 
 ```math
@@ -85,6 +79,12 @@ and
 
 ```math
 b' ~=~ \textlangle~ r(b),~ \theta(v[index(b)]) ~\textrangle
+```
+\
+From the triangle inequality:
+
+```math
+\|a-b\| ~\leq~ \|a-a'\| ~+~ \|a'-b'\| ~+~ \|b'-b\|.
 ```
 
 ___
