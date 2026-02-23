@@ -48,7 +48,7 @@ This can be thought of as a partitioning algorithm (the bins induce a partition 
 
 Here we show that |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$.
 
-But first, some terminology:
+But first, some notation:
 
 POLAR COORDINATES
 * r(p) is the radius component of the polar representation of point p.
