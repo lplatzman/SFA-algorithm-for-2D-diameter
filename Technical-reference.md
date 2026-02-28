@@ -44,7 +44,7 @@ ___
 This can be thought of as a partitioning algorithm (the bins induce a partition on the half-plane) or a modified bin-sorting algorithm. Either way, the general idea is to use the bins to produce a reduced set of points, then compute its diameter exactly.   
 
 
-## Performance Analysis
+## Analysis
 
 Here we show that |D - D($`\epsilon`$)| $`\leq`$ $`\epsilon~D`$.
 
