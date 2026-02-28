@@ -60,7 +60,7 @@ BIN INDEXING
 * v[i] is a point of greatest radius among points whose bin index is i.
 
 REDUCED SET OF POINTS
-* $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub}.   This is the set of points passed to Step 3 in the SFA algorithm.
+* $`P(\epsilon)`$ = {v[i]} $`\cup`$ {hub} is the set of points passed to Step 3 in the SFA algorithm.
 
 ___
 
